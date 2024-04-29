@@ -8,6 +8,6 @@
 
         public string Description { get; set; }
 
-        public ICollection<Product> Products { get; set;} //propiedad de navegacion
+        public ICollection<Product>? Products { get; set; } = default!; //propiedad de navegacion
     }
 }
