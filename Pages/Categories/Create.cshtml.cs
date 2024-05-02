@@ -8,9 +8,9 @@ namespace SupermarketWEB.Pages.Categories
     public class CreateModel : PageModel
     {
         private readonly SupermarketContext _context;
-        public CreateModel(SupermarketContext _context)
+       public CreateModel(SupermarketContext context)
         {
-			SupermarketContext context = null;
+			//SupermarketContext context = null;
 			_context = context;
         }
 
@@ -33,6 +33,8 @@ namespace SupermarketWEB.Pages.Categories
 
             return RedirectToPage("./Index");
         }
-		
+       
+
     }
+ 
 }
