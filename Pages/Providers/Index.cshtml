@@ -25,11 +25,15 @@
 		{
 				<tr>
 					<td>
+					@Html.DisplayFor(modelItem => item.IdDocument)
+					</td>
+					<td>
 					@Html.DisplayFor(modelItem => item.Name)
 					</td>
 					<td>
 					@Html.DisplayFor(modelItem => item.Description)
 					</td>
+					
 					<td>
 						<a a asp-page="./Edit" asp-route-id="@item.Id" class= "btn btn-warning">Edit</a>
 						<a a asp-page="./Delete" asp-route-id="@item.Id" class= "btn btn-danger">Delete</a>
