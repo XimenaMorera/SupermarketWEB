@@ -10,7 +10,7 @@ namespace SupermarketWEB.Pages.Products
 		private readonly SupermarketContext _context;
 		public CreateModel(SupermarketContext context)
 		{
-			//SupermarketContext context = null;
+			
 			_context = context;
 		}
 
