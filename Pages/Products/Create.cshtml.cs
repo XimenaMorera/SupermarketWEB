@@ -22,11 +22,11 @@ namespace SupermarketWEB.Pages.Products
 		[BindProperty]
 		public Product Product { get; set; } = default!;
 
-		public async Task<IActionResult> OnPostAsync(int categoryId)
+		public async Task<IActionResult> OnPostAsync()
 		{
 			if (!ModelState.IsValid || _context.Products == null || Product == null)
 			{
-				Product.CategoryId = categoryId;
+			
 				return Page();
 
 			}
