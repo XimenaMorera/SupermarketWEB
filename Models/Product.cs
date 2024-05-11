@@ -7,7 +7,7 @@ namespace SupermarketWEB.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        [Column(TypeName="decimal(6,2")]
+        //[Column(TypeName="decimal(6,2")]
 
         public decimal Price { get; set; }
 
@@ -15,7 +15,7 @@ namespace SupermarketWEB.Models
 
         public int CategoryId { get; set; }//serla la llave foranea
 
-        public Category Category { get; set; } = default!;//propiedad de navegacion
+        public Category? Category { get; set; } = default!;//propiedad de navegacion
 
 
 	}
