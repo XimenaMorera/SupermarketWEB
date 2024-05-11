@@ -24,7 +24,7 @@ namespace SupermarketWEB.Pages.Users
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid || _context.PayModes == null || User == null)
+            if (!ModelState.IsValid || _context.Users == null || User == null)
             {
                 return Page();
             }
